@@ -1,0 +1,32 @@
+.gradle
+
+bin
+
+Reports
+
+Libs
+
+output
+
+!output/.gitkeep
+build
+
+.classpath
+
+.project
+
+.cache
+/bin/
+/Libs/
+/.settings/
+/.classpath
+.svn/
+.cache/
+
+# Local mobile application artifacts
+Apps/*
+!Apps/.gitkeep
+# OS / logs
+.DS_Store
+*.log
+/Reports/

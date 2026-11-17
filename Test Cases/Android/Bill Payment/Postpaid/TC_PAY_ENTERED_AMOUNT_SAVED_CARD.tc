@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Pay an entered amount with a saved card.</description>
+   <name>TC_PAY_ENTERED_AMOUNT_SAVED_CARD</name>
+   <tag>android,bill-payment</tag>
+   <integratedEntity>
+      <productName>TESTOPS</productName>
+      <properties>
+         <entry>
+            <key>lastModifiedByName</key>
+            <value>renae.beckford</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByUuid</key>
+            <value>b3cb4ee7-1656-4145-ba0b-7e5d25017241</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e7d4a07c-9d90-4e4d-9352-0b5785bac425</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>90585820-0d34-4a7a-9b6d-e0e9a2e4eef4</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>Optional payment amount supplied by a calling test case.</description>
+      <id>90585820-0d34-4a7a-9b6d-e0e9a2e4eef4</id>
+      <masked>false</masked>
+      <name>paymentAmount</name>
+   </variable>
+</TestCaseEntity>

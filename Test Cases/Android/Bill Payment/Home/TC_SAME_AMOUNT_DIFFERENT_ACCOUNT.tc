@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify the same amount can be paid for a different Home account.</description>
+   <name>TC_SAME_AMOUNT_DIFFERENT_ACCOUNT</name>
+   <tag>android,bill-payment,home</tag>
+   <integratedEntity>
+      <productName>TESTOPS</productName>
+      <properties>
+         <entry>
+            <key>lastModifiedByName</key>
+            <value>renae.beckford</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByUuid</key>
+            <value>b3cb4ee7-1656-4145-ba0b-7e5d25017241</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>48bc113e-0ca5-4ca2-bbfd-76bc0b074940</testCaseGuid>
+</TestCaseEntity>

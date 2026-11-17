@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Use the alternate profile login and verify the already-paid bill message.</description>
+   <name>TC_BILL_ALREADY_PAID</name>
+   <tag>android,bill-payment</tag>
+   <integratedEntity>
+      <productName>TESTOPS</productName>
+      <properties>
+         <entry>
+            <key>lastModifiedByName</key>
+            <value>renae.beckford</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByUuid</key>
+            <value>b3cb4ee7-1656-4145-ba0b-7e5d25017241</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>176f641f-14b7-49f1-a082-d910ae7d004c</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Authenticate using OTP or password according to G_UseOTP in the selected execution profile.</description>
+   <name>TC_LOGIN</name>
+   <tag>android,authentication</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>042591cb-62e6-4edc-ba99-c0006e47a699</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>58d92c67-d6ad-40d2-a394-c527bb2d67ac</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>59482c18-a9c3-4372-98c8-b135beb8467e</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ad02c526-327c-4792-bf48-c024a0f42dd2</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>Optional MSISDN override. Uses G_MSISDN when empty.</description>
+      <id>58d92c67-d6ad-40d2-a394-c527bb2d67ac</id>
+      <masked>false</masked>
+      <name>msisdn</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>Optional password override. Uses G_Password when empty.</description>
+      <id>59482c18-a9c3-4372-98c8-b135beb8467e</id>
+      <masked>true</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>null</defaultValue>
+      <description>Optional login-mode override. Uses G_UseOTP when null.</description>
+      <id>ad02c526-327c-4792-bf48-c024a0f42dd2</id>
+      <masked>false</masked>
+      <name>useOtp</name>
+   </variable>
+</TestCaseEntity>

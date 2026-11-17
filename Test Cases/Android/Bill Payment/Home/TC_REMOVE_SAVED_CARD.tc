@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify a saved card can be removed from a Home account.</description>
+   <name>TC_REMOVE_SAVED_CARD</name>
+   <tag>android,bill-payment,home</tag>
+   <integratedEntity>
+      <productName>TESTOPS</productName>
+      <properties>
+         <entry>
+            <key>lastModifiedByName</key>
+            <value>renae.beckford</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByUuid</key>
+            <value>b3cb4ee7-1656-4145-ba0b-7e5d25017241</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1c4d7a7c-1f63-45b1-a203-d3eed59e9919</testCaseGuid>
+</TestCaseEntity>

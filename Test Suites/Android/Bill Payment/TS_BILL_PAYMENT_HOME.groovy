@@ -1,0 +1,3 @@
+/**
+ * Optional suite lifecycle hooks.
+ */

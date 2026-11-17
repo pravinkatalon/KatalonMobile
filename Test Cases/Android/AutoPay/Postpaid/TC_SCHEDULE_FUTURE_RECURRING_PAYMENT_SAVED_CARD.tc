@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_SCHEDULE_FUTURE_RECURRING_PAYMENT_SAVED_CARD</name>
+   <tag></tag>
+   <integratedEntity>
+      <productName>TESTOPS</productName>
+      <properties>
+         <entry>
+            <key>createdByName</key>
+            <value>renae.beckford</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByName</key>
+            <value>renae.beckford</value>
+         </entry>
+         <entry>
+            <key>createdByUuid</key>
+            <value>b3cb4ee7-1656-4145-ba0b-7e5d25017241</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByUuid</key>
+            <value>b3cb4ee7-1656-4145-ba0b-7e5d25017241</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>66f59023-d260-4248-a341-88c2876e194a</testCaseGuid>
+</TestCaseEntity>

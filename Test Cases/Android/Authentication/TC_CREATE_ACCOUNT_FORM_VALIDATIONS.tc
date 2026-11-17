@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_CREATE_ACCOUNT_FORM_VALIDATIONS</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>MOBILE_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>31685ec3-c5a0-42f1-bb6f-12c8a0de012d</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Launch the configured app and authenticate with MSISDN and notification OTP when required.</description>
+   <name>TC_LOGIN_WITH_OTP</name>
+   <tag>android,authentication</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c89ab325-2a4f-408e-ab10-f3b8c2bc32a6</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f26159ab-9676-46d0-b0f4-62cfe1e177cf</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0b048fb0-daee-41ae-99c7-e09923951cef</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>Optional MSISDN override. Uses G_MSISDN when empty.</description>
+      <id>f26159ab-9676-46d0-b0f4-62cfe1e177cf</id>
+      <masked>false</masked>
+      <name>msisdn</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>Unused by OTP login; accepted so TC_LOGIN can use one binding contract.</description>
+      <id>0b048fb0-daee-41ae-99c7-e09923951cef</id>
+      <masked>true</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

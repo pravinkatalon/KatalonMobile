@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_MANAGE_ACCOUNTS_SWITCH_TO_VERIFIED_ACCOUNT</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>MOBILE_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4727daab-5423-4487-a078-2053b96739cd</testCaseGuid>
+</TestCaseEntity>

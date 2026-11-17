@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <GlobalVariableEntity>
+      <description>Project-relative or absolute path to the APK, IPA, or iOS simulator app bundle.</description>
+      <initValue>'Apps/mda-local.apk'</initValue>
+      <name>G_AppPath</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Subscriber number used for authentication. Configure locally.</description>
+      <initValue>''</initValue>
+      <name>G_MSISDN</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Password used when G_UseOTP is false.</description>
+      <initValue>''</initValue>
+      <name>G_Password</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Use OTP authentication when true; use password authentication when false.</description>
+      <initValue>true</initValue>
+      <name>G_UseOTP</name>
+      <protected>false</protected>
+      <valueType>BOOLEAN</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Alternate subscriber number used only by TC_BILL_ALREADY_PAID scenarios. Configure locally.</description>
+      <initValue>''</initValue>
+      <name>G_AlternateMSISDN</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Alternate password used by TC_BILL_ALREADY_PAID when G_AlternateUseOTP is false. Configure locally.</description>
+      <initValue>''</initValue>
+      <name>G_AlternatePassword</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Use OTP for the alternate TC_BILL_ALREADY_PAID login when true; use its alternate password when false.</description>
+      <initValue>false</initValue>
+      <name>G_AlternateUseOTP</name>
+      <protected>false</protected>
+      <valueType>BOOLEAN</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Home account name or account number used to find and select the primary Home account. Configure locally.</description>
+      <initValue>''</initValue>
+      <name>G_HomeAccount</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Different Home account name or account number used by multi-account scenarios. Configure locally.</description>
+      <initValue>''</initValue>
+      <name>G_AlternateHomeAccount</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <defaultProfile>true</defaultProfile>
+   <description>Shared variable schema. Select an environment profile before execution.</description>
+   <name>default</name>
+   <tag></tag>
+</GlobalVariableEntities>
