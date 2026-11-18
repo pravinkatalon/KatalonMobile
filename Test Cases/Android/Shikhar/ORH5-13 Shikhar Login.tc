@@ -28,7 +28,78 @@ Acceptance criteria
       </properties>
       <type>TESTCASE</type>
    </integratedEntity>
+   <integratedEntity>
+      <productName>JIRA</productName>
+      <properties>
+         <entry>
+            <key>integratedValue</key>
+            <value>{&quot;jiraIssue&quot;:{&quot;fields&quot;:{&quot;customFields&quot;:{&quot;customfield_10019&quot;:&quot;0|i004s9:&quot;,&quot;customfield_10020&quot;:[{&quot;id&quot;:68,&quot;name&quot;:&quot;Orange Sprint 1&quot;,&quot;state&quot;:&quot;active&quot;,&quot;boardId&quot;:67,&quot;goal&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2026-09-14T08:31:45.512Z&quot;,&quot;endDate&quot;:&quot;2026-09-28T08:31:34.000Z&quot;}],&quot;customfield_10000&quot;:&quot;{}&quot;},&quot;status&quot;:{&quot;id&quot;:10070,&quot;description&quot;:&quot;&quot;,&quot;iconUrl&quot;:&quot;https://pravinrajpaul.atlassian.net/images/icons/statuses/generic.png&quot;,&quot;statusCategory&quot;:{&quot;id&quot;:2,&quot;key&quot;:&quot;new&quot;,&quot;colorName&quot;:&quot;blue-gray&quot;,&quot;self&quot;:&quot;https://pravinrajpaul.atlassian.net/rest/api/2/statuscategory/2&quot;,&quot;name&quot;:&quot;To Do&quot;},&quot;self&quot;:&quot;https://pravinrajpaul.atlassian.net/rest/api/2/status/10070&quot;,&quot;name&quot;:&quot;To Do&quot;},&quot;project&quot;:{&quot;self&quot;:&quot;https://pravinrajpaul.atlassian.net/rest/api/2/project/10066&quot;,&quot;key&quot;:&quot;ORH5&quot;,&quot;id&quot;:10066,&quot;name&quot;:&quot;OrangeHRMV5.0&quot;},&quot;components&quot;:[],&quot;summary&quot;:&quot;Shikhar App Requirement&quot;,&quot;description&quot;:&quot;The Shikhar app must let users proceed through login with a mobile number. The login flow must display the country code and mobile-number prompt, allow the country code to be set to *+91*, and accept a mobile number. When the user taps *Login*, a number accepted for login must take the user to the PIN page. The user can then enter a six-digit PIN and submit it. If login is rejected, the app must display a clear invalid-login error without spelling mistakes.\n\nAcceptance criteria\n\n# The login screen displays a country-code selector and a mobile-number prompt.\n# The user can select *+91* as the country code.\n# The user can enter a mobile number and tap *Login*.\n# For a number accepted by the login flow, the app displays the PIN page.\n# If the PIN page appears while processing a dataset, remaining mobile-number entries are skipped.\n# The user can enter a six-digit PIN and tap *Login*.\n# If login is unsuccessful, the app displays an error message that clearly indicates the invalid-login condition and has no spelling errors.&quot;,&quot;reporter&quot;:{&quot;emailAddress&quot;:&quot;pravinrajpaul@gmail.com&quot;,&quot;active&quot;:true,&quot;displayName&quot;:&quot;Pravin Raj Paul&quot;,&quot;accountId&quot;:&quot;5a5ee328c5aa7728df8617e7&quot;,&quot;self&quot;:&quot;https://pravinrajpaul.atlassian.net/rest/api/2/user?accountId\u003d5a5ee328c5aa7728df8617e7&quot;},&quot;priority&quot;:{&quot;id&quot;:3,&quot;self&quot;:&quot;https://pravinrajpaul.atlassian.net/rest/api/2/priority/3&quot;,&quot;name&quot;:&quot;Medium&quot;},&quot;votes&quot;:{&quot;self&quot;:&quot;https://pravinrajpaul.atlassian.net/rest/api/2/issue/ORH5-13/votes&quot;,&quot;votes&quot;:0,&quot;hasVoted&quot;:false},&quot;fixVersions&quot;:[{&quot;self&quot;:&quot;https://pravinrajpaul.atlassian.net/rest/api/2/version/10036&quot;,&quot;id&quot;:10036,&quot;description&quot;:&quot;&quot;,&quot;name&quot;:&quot;Release1&quot;,&quot;isArchived&quot;:false,&quot;isReleased&quot;:false}],&quot;subtasks&quot;:[],&quot;labels&quot;:[]},&quot;self&quot;:&quot;https://pravinrajpaul.atlassian.net/rest/api/latest/issue/11252&quot;,&quot;key&quot;:&quot;ORH5-13&quot;,&quot;id&quot;:11252}}</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>a1f95472-1846-47a5-8dd7-75e64f04dca9</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>1bdc5283-bbbb-422d-81e7-8d4af1b16dd2</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/Shikhar Data</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>1bdc5283-bbbb-422d-81e7-8d4af1b16dd2</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Phone</value>
+      <variableId>ce5ea6b7-a7ea-4e27-b43a-8562418ceeb3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>1bdc5283-bbbb-422d-81e7-8d4af1b16dd2</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Pin</value>
+      <variableId>8d94bec6-53cd-42ed-a9bb-4e7cd541a210</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>1bdc5283-bbbb-422d-81e7-8d4af1b16dd2</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Phone1</value>
+      <variableId>a5b2a561-7dd2-4208-94e1-5b2656157b9e</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>1bdc5283-bbbb-422d-81e7-8d4af1b16dd2</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Pin1</value>
+      <variableId>55900947-3ce0-4e5f-8ce8-30730b7c88b0</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ce5ea6b7-a7ea-4e27-b43a-8562418ceeb3</id>
+      <masked>false</masked>
+      <name>phone</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8d94bec6-53cd-42ed-a9bb-4e7cd541a210</id>
+      <masked>false</masked>
+      <name>pin</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a5b2a561-7dd2-4208-94e1-5b2656157b9e</id>
+      <masked>false</masked>
+      <name>phone1</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>55900947-3ce0-4e5f-8ce8-30730b7c88b0</id>
+      <masked>false</masked>
+      <name>pin1</name>
+   </variable>
 </TestCaseEntity>

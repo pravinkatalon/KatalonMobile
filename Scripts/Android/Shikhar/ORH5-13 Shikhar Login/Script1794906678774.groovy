@@ -30,28 +30,30 @@ Mobile.tap(findTestObject('Android/Shikhar/android.widget.TextView - Next (1)'),
 
 Mobile.tap(findTestObject('Android/Shikhar/android.widget.TextView - Login'), 60)
 
-Mobile.setText(findTestObject('Android/Shikhar/android.widget.EditText - Enter Mobile Number'), '4533245665', 60)
+Mobile.setText(findTestObject('Android/Shikhar/android.widget.EditText - Enter Mobile Number'), phone, 60)
 
 Mobile.tap(findTestObject('Android/Shikhar/android.widget.TextView - Next (2)'), 60)
 
 Mobile.tap(findTestObject('Android/Shikhar/android.widget.RadioButton - No'), 60)
 
-Mobile.getText(findTestObject('Android/Shikhar/android.widget.TextView - Start new registration with HUL Distributor  Shikhar'),
-	60)
+Mobile.getText(findTestObject('Android/Shikhar/android.widget.TextView - Start new registration with HUL Distributor  Shikhar'), 
+    60)
 
 Mobile.tap(findTestObject('Android/Shikhar/android.widget.TextView - Next (3)'), 60)
 
-Mobile.setText(findTestObject('Android/Shikhar/android.widget.EditText (4)'), '123456', 60)
+Mobile.setText(findTestObject('Android/Shikhar/android.widget.EditText (4)'), pin, 60)
 
 Mobile.tap(findTestObject('Android/Shikhar/android.widget.TextView - Confirm'), 60)
 
 Mobile.tap(findTestObject('Android/Shikhar/android.widget.TextView - Change Number'), 60)
 
-Mobile.setText(findTestObject('Android/Shikhar/android.widget.EditText - Enter your mobile number'), '6374630621', 60)
+Mobile.setText(findTestObject('Android/Shikhar/android.widget.EditText - Enter your mobile number'), phone1, 60)
 
 Mobile.tap(findTestObject('Android/Shikhar/android.widget.TextView - Get verification code'), 60)
 
-Mobile.setText(findTestObject('Android/Shikhar/android.widget.EditText (4)'), '144786', 60)
+Mobile.setText(findTestObject('Android/Shikhar/android.widget.EditText (4)'), pin1, 60)
+
+Mobile.takeScreenshotAsCheckpoint('LoginPin', [], null, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Android/Shikhar/android.widget.TextView - Confirm'), 60)
 

@@ -24,7 +24,7 @@ Mobile.tap(findTestObject('Android/Shikhar/android.widget.TextView -'), 60)
 
 Mobile.tap(findTestObject('Android/Shikhar/android.widget.TextView - Next'), 60)
 
-Mobile.tap(findTestObject('Android/Shikhar/android.widget.TextView - Next Heal'), 60)
+Mobile.tap(findTestObject('Android/Shikhar/android.widget.TextView - Next (1)'), 60)
 
 Mobile.tap(findTestObject('Android/Shikhar/android.widget.TextView - Next Heal'), 60)
 
