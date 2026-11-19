@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Summary: Shikhar App Requirement
-Description: The Shikhar app must let users proceed through login with a mobile number. The login flow must display the country code and mobile-number prompt, allow the country code to be set to *+91*, and accept a mobile number. When the user taps *Login*, a number accepted for login must take the user to the PIN page. The user can then enter a six-digit PIN and submit it. If login is rejected, the app must display a clear invalid-login error without spelling mistakes.
-
-Acceptance criteria
-
-# The login screen displays a country-code selector and a mobile-number prompt.
-# The user can select *+91* as the country code.
-# The user can enter a mobile number and tap *Login*.
-# For a number accepted by the login flow, the app displays the PIN page.
-# If the PIN page appears while processing a dataset, remaining mobile-number entries are skipped.
-# The user can enter a six-digit PIN and tap *Login*.
-# If login is unsuccessful, the app displays an error message that clearly indicates the invalid-login condition and has no spelling errors.</description>
+   <description>Accept the app prompts page by page for three introductory prompts. Enter an invalid mobile number to log in. Key in the PIN to validate the invalid number. Validate the displayed text for the invalid mobile number. Then enter a valid mobile number and use the verification PIN to check that login is completed successfully.</description>
    <name>ORH5-13 Shikhar Fail</name>
-   <tag>jira-integration</tag>
+   <tag>GenAI,jira-integration</tag>
    <integratedEntity>
       <productName>TESTOPS</productName>
       <properties>
