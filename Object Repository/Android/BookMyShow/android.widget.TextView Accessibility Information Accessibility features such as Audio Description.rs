@@ -3,7 +3,7 @@
    <description></description>
    <name>android.widget.TextView Accessibility Information Accessibility features such as Audio Description</name>
    <tag></tag>
-   <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <elementGuidId>696a8229-6e70-4995-bd70-7e7e48c56f99</elementGuidId>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>true</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -13,7 +13,7 @@
       <name>index</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>78edc8c9-317c-4044-ab51-41a03c5ca731</webElementGuid>
+      <webElementGuid>ac837822-ea92-4a66-8025-7c7595deae35</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +21,7 @@
       <name>package</name>
       <type>Main</type>
       <value>com.bt.bms</value>
-      <webElementGuid>96835d63-389a-4110-b697-08172dc43727</webElementGuid>
+      <webElementGuid>1568634b-48b5-45dd-93a8-18bdaa562cfb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,7 +29,7 @@
       <name>class</name>
       <type>Main</type>
       <value>android.widget.TextView</value>
-      <webElementGuid>1aa072c9-85b7-4e89-aba6-72922a90837b</webElementGuid>
+      <webElementGuid>a7671fb3-8fdb-481d-90d2-b6b37112f9cf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -57,7 +57,7 @@ Cinema reserves the right to cancel or modify showtimes without prior notice due
 17. Use Of Photo And Video Camera &amp; Recording Through Mobile Phones Is Strictly Prohibited Within The Theatre Premises.
 18. For Enquiries, Suggestion And Feedback Please Write To Us Customercare@Mayajaal.Com.
 </value>
-      <webElementGuid>a3fe3fe2-bf05-4b4a-98c1-735b3b1dc80d</webElementGuid>
+      <webElementGuid>672556c2-08b1-40ad-9f13-093450812e9f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -65,7 +65,7 @@ Cinema reserves the right to cancel or modify showtimes without prior notice due
       <name>checkable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>dca8febf-01f6-47f1-8153-f7e051b56449</webElementGuid>
+      <webElementGuid>372a7aae-6837-4277-8af1-eebc0e324e8b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -73,7 +73,7 @@ Cinema reserves the right to cancel or modify showtimes without prior notice due
       <name>checked</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>c407b48d-d2fa-42cb-8e15-0bc78d8035f6</webElementGuid>
+      <webElementGuid>8f5ad6e1-976a-4e4a-9342-4a345fb2754b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -81,7 +81,7 @@ Cinema reserves the right to cancel or modify showtimes without prior notice due
       <name>clickable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>c6ce9a2b-c9b7-4829-9ae7-7943ebffae37</webElementGuid>
+      <webElementGuid>953db7e3-4afd-4c77-a295-c2430c5edfa9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -89,7 +89,7 @@ Cinema reserves the right to cancel or modify showtimes without prior notice due
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>d7a63516-8e48-4fdf-bf97-7a7e25bf7868</webElementGuid>
+      <webElementGuid>449e177a-532e-4d37-ba5c-8b71e808ce91</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -97,7 +97,7 @@ Cinema reserves the right to cancel or modify showtimes without prior notice due
       <name>focusable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>a8197d73-30e8-4c7d-ae89-05d779610a89</webElementGuid>
+      <webElementGuid>e8376161-a048-48f4-9688-b03ec1840df1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -105,7 +105,7 @@ Cinema reserves the right to cancel or modify showtimes without prior notice due
       <name>focused</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>ca6eb3c6-8642-4e2b-8bb3-291ffb1bc667</webElementGuid>
+      <webElementGuid>d395a5e9-d9fd-4b76-bf7d-3c834c345b06</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -113,7 +113,7 @@ Cinema reserves the right to cancel or modify showtimes without prior notice due
       <name>long-clickable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>61cb66bc-55a8-4b21-beb5-f656fc675a57</webElementGuid>
+      <webElementGuid>67642739-d2de-470d-be18-1ff81ec90c7f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -121,7 +121,7 @@ Cinema reserves the right to cancel or modify showtimes without prior notice due
       <name>password</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>deaa8fb0-ffd7-4b2d-a8ba-c528b2d78f94</webElementGuid>
+      <webElementGuid>10ac3154-9df3-414e-9f78-1e25b98dcd20</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -129,7 +129,7 @@ Cinema reserves the right to cancel or modify showtimes without prior notice due
       <name>scrollable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>465ba86c-59a6-4e52-b91c-e2a4068d3762</webElementGuid>
+      <webElementGuid>df593b2b-afe2-47bb-bcc9-737d73f2ab6b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -137,7 +137,7 @@ Cinema reserves the right to cancel or modify showtimes without prior notice due
       <name>selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>c9732f05-7840-43e3-848f-4d38a4ee4cf2</webElementGuid>
+      <webElementGuid>aa3c0771-5750-4a38-a3d6-dd1d72f723fb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -145,7 +145,7 @@ Cinema reserves the right to cancel or modify showtimes without prior notice due
       <name>bounds</name>
       <type>Main</type>
       <value>[48,1009][1296,2747]</value>
-      <webElementGuid>08b70187-5302-4151-a184-ea48412074c7</webElementGuid>
+      <webElementGuid>f4c3cf23-5755-4f21-b97d-6e44fd27f1e6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -153,7 +153,7 @@ Cinema reserves the right to cancel or modify showtimes without prior notice due
       <name>displayed</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>a3668349-48e6-488f-b982-49916ed9117c</webElementGuid>
+      <webElementGuid>4af4f135-f2c3-4a23-81e2-637dc1d17777</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -161,17 +161,15 @@ Cinema reserves the right to cancel or modify showtimes without prior notice due
       <name>xpath</name>
       <type>Main</type>
       <value>/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.TextView</value>
-      <webElementGuid>5fd3975e-429c-4376-b96d-932b47344447</webElementGuid>
+      <webElementGuid>dc034b69-a7dd-4c46-b0dd-fae9fd1e5830</webElementGuid>
    </webElementProperties>
    <context>NATIVE</context>
    <locatorCollection>
       <entry>
-         <key>CLASS_NAME</key>
-         <value>android.widget.TextView</value>
+         <key>NAME</key>
       </entry>
       <entry>
-         <key>NAME</key>
-         <value></value>
+         <key>ACCESSIBILITY</key>
       </entry>
       <entry>
          <key>ATTRIBUTES</key>
@@ -218,8 +216,24 @@ Cinema reserves the right to cancel or modify showtimes without prior notice due
 ')]</value>
       </entry>
       <entry>
+         <key>XPATH</key>
+         <value>/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.TextView</value>
+      </entry>
+      <entry>
          <key>IMAGE</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+      </entry>
+      <entry>
+         <key>ID</key>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value>android.widget.TextView</value>
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
@@ -245,27 +259,7 @@ Cinema reserves the right to cancel or modify showtimes without prior notice due
 18. For Enquiries, Suggestion And Feedback Please Write To Us Customercare@Mayajaal.Com.
 &quot;)</value>
       </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.TextView</value>
-      </entry>
-      <entry>
-         <key>ANDROID_VIEWTAG</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ACCESSIBILITY</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ID</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
-         <value></value>
-      </entry>
    </locatorCollection>
-   <locatorStrategy>ATTRIBUTES</locatorStrategy>
+   <locatorStrategy>XPATH</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>

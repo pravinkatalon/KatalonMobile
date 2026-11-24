@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>android.widget.TextView - 0330 PM</name>
+   <name>android.widget.EditText - email</name>
    <tag></tag>
-   <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <elementGuidId>7dc93b28-8f18-4e88-969f-d1815bd6b246</elementGuidId>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>true</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -13,7 +13,7 @@
       <name>index</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>b3e89aaf-34d3-48ea-9e15-4b0166eeecc6</webElementGuid>
+      <webElementGuid>243c0a99-a0b7-473c-acc8-11f7a817cba3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,31 +21,31 @@
       <name>package</name>
       <type>Main</type>
       <value>com.bt.bms</value>
-      <webElementGuid>783438b8-e88a-4f0f-9c82-2882c8b11edd</webElementGuid>
+      <webElementGuid>d5ab4055-26eb-49fe-9c12-d194a477bf79</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>android.widget.TextView</value>
-      <webElementGuid>75c90aca-4f2e-498e-9520-5ea04e1c4b6b</webElementGuid>
+      <value>android.widget.EditText</value>
+      <webElementGuid>1118e842-4841-46f8-94d4-2d162b094704</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>03:30 PM</value>
-      <webElementGuid>8b8fda56-5347-40ee-a30e-3f3916d799ef</webElementGuid>
+      <value>eg:abc@gmail.com</value>
+      <webElementGuid>07ed6db2-fd45-4605-abf3-8723237c3826</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bt.bms:id/movie_show_timing_text</value>
-      <webElementGuid>5ab98da7-a661-4de2-8758-fd1a48ea14a6</webElementGuid>
+      <value>com.bt.bms:id/email_address</value>
+      <webElementGuid>b6d68a97-03d1-4cd8-acf1-b30233c107c4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>checkable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>a7eb855e-7a98-4f12-9eb5-1d146a84f26c</webElementGuid>
+      <webElementGuid>51cbb36f-498b-48f0-a13e-6ba066628f63</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,15 +61,15 @@
       <name>checked</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>ec5d5cfc-8b28-42ad-a98a-dbbe5136dece</webElementGuid>
+      <webElementGuid>9974af5f-402a-4a1b-9491-061cf134cea2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>clickable</name>
       <type>Main</type>
-      <value>false</value>
-      <webElementGuid>3990aaf4-876b-44de-b2b7-e7492a34d44a</webElementGuid>
+      <value>true</value>
+      <webElementGuid>9fa4ab89-e7a3-4c22-9c58-aff61da5b659</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,15 +77,15 @@
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>af3ac930-5054-4b52-b7ad-eb2a738ce05c</webElementGuid>
+      <webElementGuid>2479f271-a60a-4476-8c37-0c89b4364ab6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>focusable</name>
       <type>Main</type>
-      <value>false</value>
-      <webElementGuid>7250cca2-a055-4722-ad46-c960559ae786</webElementGuid>
+      <value>true</value>
+      <webElementGuid>7398e7be-924b-46ac-950d-7eaab25e8d11</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,15 +93,15 @@
       <name>focused</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>3ead0695-6ef5-4948-ba7a-be96012060f9</webElementGuid>
+      <webElementGuid>4dcb5006-cb5f-43ff-9312-8a6350259bf4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>long-clickable</name>
       <type>Main</type>
-      <value>false</value>
-      <webElementGuid>e70faa5b-601d-455e-bf0d-076d79fa9d91</webElementGuid>
+      <value>true</value>
+      <webElementGuid>10c55140-523f-4971-82c2-cadde8621cba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>password</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>dc95893c-763c-4450-af7b-179d4c0f8099</webElementGuid>
+      <webElementGuid>e466277d-eac4-47e1-9cd5-b3f2a7df439a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>scrollable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>affbbc4d-beaf-40a0-9a2f-6883a88954b9</webElementGuid>
+      <webElementGuid>8b93a423-9275-4399-b480-82c111ce5b00</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -125,15 +125,15 @@
       <name>selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>b61bed81-fcc3-4d28-9d4e-fefbd1186850</webElementGuid>
+      <webElementGuid>e7c3b888-82e0-498b-9d19-ccbba2302075</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>bounds</name>
       <type>Main</type>
-      <value>[135,454][292,503]</value>
-      <webElementGuid>09629bea-b8ef-4b73-9ac7-0819e6c2d297</webElementGuid>
+      <value>[48,431][1296,544]</value>
+      <webElementGuid>c9bc3896-e81c-4fc0-9fc0-5458fe497e62</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -141,57 +141,60 @@
       <name>displayed</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>72d99816-43a9-494c-b406-f9b4d967b7e7</webElementGuid>
+      <webElementGuid>0228dd4d-4f05-4847-a350-ab7a918652ac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>hint</name>
+      <type>Main</type>
+      <value>eg:abc@gmail.com</value>
+      <webElementGuid>35f9fe6b-c6a5-4878-a24c-83381e0248b3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout[2]/androidx.recyclerview.widget.RecyclerView/androidx.cardview.widget.CardView[1]/android.view.ViewGroup/android.widget.TextView[1]</value>
-      <webElementGuid>4aa34733-5fc3-4cf9-b915-e082e2020f22</webElementGuid>
+      <value>/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.EditText</value>
+      <webElementGuid>652f37bf-be4a-4c56-848e-bf88415f5c68</webElementGuid>
    </webElementProperties>
    <context>NATIVE</context>
    <locatorCollection>
       <entry>
-         <key>CLASS_NAME</key>
-         <value>android.widget.TextView</value>
-      </entry>
-      <entry>
          <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ATTRIBUTES</key>
-         <value>//*[@class = 'android.widget.TextView' and (@text = '03:30 PM' or . = '03:30 PM') and @resource-id = 'com.bt.bms:id/movie_show_timing_text']</value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector().className(&quot;android.widget.TextView&quot;).text(&quot;03:30 PM&quot;).resourceId(&quot;com.bt.bms:id/movie_show_timing_text&quot;)</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout[2]/androidx.recyclerview.widget.RecyclerView/androidx.cardview.widget.CardView[1]/android.view.ViewGroup/android.widget.TextView[1]</value>
-      </entry>
-      <entry>
-         <key>ANDROID_VIEWTAG</key>
-         <value></value>
       </entry>
       <entry>
          <key>ACCESSIBILITY</key>
-         <value></value>
       </entry>
       <entry>
-         <key>ID</key>
-         <value>com.bt.bms:id/movie_show_timing_text</value>
+         <key>ATTRIBUTES</key>
+         <value>//*[@class = 'android.widget.EditText' and @resource-id = 'com.bt.bms:id/email_address']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.EditText</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
       </entry>
       <entry>
          <key>CUSTOM</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>ID</key>
+         <value>com.bt.bms:id/email_address</value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value>android.widget.EditText</value>
+      </entry>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector().className(&quot;android.widget.EditText&quot;).resourceId(&quot;com.bt.bms:id/email_address&quot;)</value>
       </entry>
    </locatorCollection>
    <locatorStrategy>ATTRIBUTES</locatorStrategy>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>android.widget.TextView - MAYAJAAL Multiplex ECR, Chennai</name>
+   <name>android.widget.TextView - Facility</name>
    <tag></tag>
-   <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <elementGuidId>4a071443-7dd9-47dc-aef1-49b4d8a5d873</elementGuidId>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>true</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -12,8 +12,8 @@
       <matchCondition>equals</matchCondition>
       <name>index</name>
       <type>Main</type>
-      <value>0</value>
-      <webElementGuid>d4f1133e-5e05-4274-89d1-ab127e69ae29</webElementGuid>
+      <value>1</value>
+      <webElementGuid>4062441e-5f61-439b-853b-62b21d49a055</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +21,7 @@
       <name>package</name>
       <type>Main</type>
       <value>com.bt.bms</value>
-      <webElementGuid>e6489365-9cfa-4815-9ce4-77f3483381d8</webElementGuid>
+      <webElementGuid>f7885755-4db9-4039-bbe3-1ebc5e7c35b5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,15 +29,23 @@
       <name>class</name>
       <type>Main</type>
       <value>android.widget.TextView</value>
-      <webElementGuid>182610b4-78fd-4832-a09c-e00f8df8477a</webElementGuid>
+      <webElementGuid>6ad81b75-dd88-4d32-9d2e-135f99d20b25</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>MAYAJAAL Multiplex: ECR, Chennai</value>
-      <webElementGuid>2795392e-8a44-4bac-8571-2ce384648b35</webElementGuid>
+      <value>${facility}</value>
+      <webElementGuid>207d5f03-092b-4549-99f0-6ba60e699026</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>resource-id</name>
+      <type>Main</type>
+      <value>com.bt.bms:id/show_time_info_info_recycler_view_image_desc_text_view</value>
+      <webElementGuid>c5be14bf-3c39-4a92-990e-f67d90cd670b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +53,7 @@
       <name>checkable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>027c20fb-9b32-41d8-8310-9f20e53e7939</webElementGuid>
+      <webElementGuid>6f81e1d2-154a-4fe5-b2d0-9d96a9d80337</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +61,7 @@
       <name>checked</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>62682e57-04b9-4683-b821-6041ffc9b29e</webElementGuid>
+      <webElementGuid>c4371637-c2ff-40a6-91d1-b68e7d09b0ae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +69,7 @@
       <name>clickable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>79742edc-f05c-4784-8923-744513e70dfc</webElementGuid>
+      <webElementGuid>debf5ac2-d303-4c45-8313-7cfa5250af2f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +77,7 @@
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>7bdc48ed-48b1-4a99-94b7-1313cb7045a7</webElementGuid>
+      <webElementGuid>3a808844-fe59-4ef3-869a-a3a954762d2f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +85,7 @@
       <name>focusable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>44d0f9ff-d83e-4ec2-a72a-ccef4e80c69a</webElementGuid>
+      <webElementGuid>f3c54409-b964-40fd-9c20-9ed239370155</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +93,7 @@
       <name>focused</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>8060e7e0-745a-430e-9cef-4a696b4d06bd</webElementGuid>
+      <webElementGuid>49c3a021-fd05-414b-ab3c-4d25b6673992</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +101,7 @@
       <name>long-clickable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>98f80ed0-3ee7-4398-b7a7-e0bf5ac2bb2d</webElementGuid>
+      <webElementGuid>97ef137f-49e7-440d-a5b2-bd41dbf23e4e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -101,7 +109,7 @@
       <name>password</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>e0472877-d289-4767-9b03-618d44ce37b5</webElementGuid>
+      <webElementGuid>82efe801-7510-4cea-a6e1-426678fa0b20</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -109,7 +117,7 @@
       <name>scrollable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>001e7b8d-a4cd-4eca-b461-094d754284bb</webElementGuid>
+      <webElementGuid>d4661938-9e29-402d-9eaf-8a107bd53084</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -117,15 +125,15 @@
       <name>selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>d0f05bc0-646c-4910-bc76-9face0f3ac75</webElementGuid>
+      <webElementGuid>a4241993-0559-43b0-aaf8-bca59d450486</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>bounds</name>
       <type>Main</type>
-      <value>[204,1345][927,1403]</value>
-      <webElementGuid>0e59f8b6-00b2-4a4b-98bf-9f7fba06ac05</webElementGuid>
+      <value>[528,2757][744,2860]</value>
+      <webElementGuid>879e2bc8-f7b1-4b51-9fc0-1e4d2256d936</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -133,57 +141,52 @@
       <name>displayed</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>9c9a7e95-d7a3-43c3-aeaf-c9ac4f68989b</webElementGuid>
+      <webElementGuid>7d8fb51e-5702-4a89-a148-36ec6903f9f0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/androidx.compose.ui.viewinterop.ViewFactoryHolder/android.widget.TextView</value>
-      <webElementGuid>63668322-3089-4834-a967-5587f2da5a2d</webElementGuid>
+      <value>/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[3]/android.widget.TextView</value>
+      <webElementGuid>665e8fe0-399e-41f2-8696-837a64807d4b</webElementGuid>
    </webElementProperties>
    <context>NATIVE</context>
    <locatorCollection>
+      <entry>
+         <key>NAME</key>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
+         <value>//*[@class = 'android.widget.TextView' and (@text = '${facility}' or . = '${facility}') and @resource-id = 'com.bt.bms:id/show_time_info_info_recycler_view_image_desc_text_view']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[3]/android.widget.TextView</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+      </entry>
+      <entry>
+         <key>ID</key>
+         <value>com.bt.bms:id/show_time_info_info_recycler_view_image_desc_text_view</value>
+      </entry>
       <entry>
          <key>CLASS_NAME</key>
          <value>android.widget.TextView</value>
       </entry>
       <entry>
-         <key>NAME</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ATTRIBUTES</key>
-         <value>//*[@class = 'android.widget.TextView' and (@text = 'MAYAJAAL Multiplex: ECR, Chennai' or . = 'MAYAJAAL Multiplex: ECR, Chennai')]</value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector().className(&quot;android.widget.TextView&quot;).text(&quot;MAYAJAAL Multiplex: ECR, Chennai&quot;)</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/androidx.compose.ui.viewinterop.ViewFactoryHolder/android.widget.TextView</value>
-      </entry>
-      <entry>
-         <key>ANDROID_VIEWTAG</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ACCESSIBILITY</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>ID</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CUSTOM</key>
-         <value></value>
+         <value>new UiSelector().className(&quot;android.widget.TextView&quot;).text(&quot;Parking Facility&quot;).resourceId(&quot;com.bt.bms:id/show_time_info_info_recycler_view_image_desc_text_view&quot;)</value>
       </entry>
    </locatorCollection>
    <locatorStrategy>ATTRIBUTES</locatorStrategy>

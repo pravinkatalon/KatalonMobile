@@ -12,11 +12,19 @@ import java.util.concurrent.TimeUnit
 
 class MobileAssist {
 
-    /** Scrolls until text is visible or maxSwipes is reached. */
+    /** Default swipe length as a fraction of the container height (80% -> 20%). */
+    private static final double DEFAULT_SWIPE_SCALE = 0.6
+
+    /**
+     * Scrolls until text is visible or maxSwipes is reached.
+     * swipeScale: fraction of the container height each swipe covers (e.g. 0.3 for short swipes).
+     */
     @Keyword
     static boolean scrollToText(TestObject container, String text, String direction = 'DOWN',
-                                int maxSwipes = 20, boolean exactMatch = false) {
+                                int maxSwipes = 20, boolean exactMatch = false,
+                                double swipeScale = DEFAULT_SWIPE_SCALE) {
         validateArguments(text, direction, maxSwipes)
+        validateSwipeScale(swipeScale)
 
         AppiumDriver driver = MobileDriverFactory.getDriver()
         Map scrollTarget = resolveScrollTarget(driver, container)
@@ -32,7 +40,7 @@ class MobileAssist {
             }
 
             if (attempt < maxSwipes) {
-                if (!scroll(scrollTarget, direction)) {
+                if (!scroll(scrollTarget, direction, swipeScale)) { 
                     return false
                 }
                 Mobile.delay(1)
@@ -46,8 +54,10 @@ class MobileAssist {
     /** Scrolls page by page until text is visible or the page limit is reached. */
     @Keyword
     static boolean smartScrollToText(TestObject container, String text, String direction = 'DOWN',
-                                     int pages = 5, boolean exactMatch = false) {
+                                     int pages = 5, boolean exactMatch = false,
+                                     double swipeScale = DEFAULT_SWIPE_SCALE) {
         validateArguments(text, direction, pages)
+        validateSwipeScale(swipeScale)
 
         AppiumDriver driver = MobileDriverFactory.getDriver()
         Map scrollTarget = resolveScrollTarget(driver, container)
@@ -63,7 +73,7 @@ class MobileAssist {
             }
 
             if (page < pages) {
-                if (!scroll(scrollTarget, direction)) {
+                if (!scroll(scrollTarget, direction, swipeScale)) {
                     return false
                 }
                 Mobile.delay(1)
@@ -135,7 +145,7 @@ class MobileAssist {
         return target
     }
 
-    private static boolean scroll(Map target, String direction) {
+    private static boolean scroll(Map target, String direction, double swipeScale = DEFAULT_SWIPE_SCALE) {
         int left = target.left as int
         int top = target.top as int
         int width = target.width as int
@@ -146,21 +156,17 @@ class MobileAssist {
             return false
         }
 
-        // Use an explicit vertical swipe inside the target bounds.
+        // Vertical swipe centred in the target, covering swipeScale of its height.
         // UP means bottom-to-top; DOWN means top-to-bottom.
         int startX = left + (width / 2)
-        int startY
-        int endY
+        int centerY = top + (height / 2) as int
+        int halfDistance = (height * swipeScale / 2) as int
+        int lowerY = centerY + halfDistance
+        int upperY = centerY - halfDistance
+        int startY = direction.equalsIgnoreCase('UP') ? lowerY : upperY
+        int endY = direction.equalsIgnoreCase('UP') ? upperY : lowerY
 
-        if (direction.equalsIgnoreCase('UP')) {
-            startY = top + (height * 0.80) as int
-            endY = top + (height * 0.20) as int
-        } else {
-            startY = top + (height * 0.20) as int
-            endY = top + (height * 0.80) as int
-        }
-
-        println "MobileAssist explicit swipe: direction=${direction}, start=(${startX},${startY}), end=(${startX},${endY}), target=${target}"
+        println "MobileAssist explicit swipe: direction=${direction}, scale=${swipeScale}, start=(${startX},${startY}), end=(${startX},${endY}), target=${target}"
 
         try {
             // Mobile.swipe works locally and on Test Cloud; adb is a local-only fallback,
@@ -229,6 +235,12 @@ class MobileAssist {
     private static void failAndPrint(String message) {
         println message
         KeywordUtil.markFailed(message)
+    }
+
+    private static void validateSwipeScale(double swipeScale) {
+        if (swipeScale <= 0 || swipeScale > 0.9) {
+            throw new IllegalArgumentException('swipeScale must be greater than 0 and at most 0.9')
+        }
     }
 
     private static void validateArguments(String text, String direction, int limit) {

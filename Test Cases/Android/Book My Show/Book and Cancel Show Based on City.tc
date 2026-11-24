@@ -7,16 +7,8 @@
       <productName>TESTOPS</productName>
       <properties>
          <entry>
-            <key>createdByName</key>
-            <value>Pravin Raj Paul</value>
-         </entry>
-         <entry>
             <key>lastModifiedByName</key>
             <value>Pravin Raj Paul</value>
-         </entry>
-         <entry>
-            <key>createdByUuid</key>
-            <value>b012d1f4-436f-404e-b6bf-7ba80711ad64</value>
          </entry>
          <entry>
             <key>lastModifiedByUuid</key>
@@ -27,5 +19,96 @@
    </integratedEntity>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>657d6d60-884b-436f-a45a-7716b725097f</testCaseGuid>
+   <testCaseGuid>3bdcfd2b-7575-43ca-a8b1-f7d5e6d08bf0</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>841be45a-782f-4411-b817-c56ba87e3d98</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1fd82a58-1660-48b6-b498-d8327c0e78fe</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f3ed6a18-477e-44e0-bcad-2f510c7936ea</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>50b95fd9-885f-4038-9831-b66ed40ae86c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>34ab539c-19f1-419c-8199-af330a31a3b7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b022686a-96c2-48c2-88c1-602308e99235</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>10ac052c-613d-4f8d-9843-6a06721df34b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Sathyavan'</defaultValue>
+      <description></description>
+      <id>841be45a-782f-4411-b817-c56ba87e3d98</id>
+      <masked>false</masked>
+      <name>Movie</name>
+   </variable>
+   <variable>
+      <defaultValue>'Cinepolis'</defaultValue>
+      <description></description>
+      <id>1fd82a58-1660-48b6-b498-d8327c0e78fe</id>
+      <masked>false</masked>
+      <name>Theater</name>
+   </variable>
+   <variable>
+      <defaultValue>'01:10 PM'</defaultValue>
+      <description></description>
+      <id>f3ed6a18-477e-44e0-bcad-2f510c7936ea</id>
+      <masked>false</masked>
+      <name>TimeSlot_Before</name>
+   </variable>
+   <variable>
+      <defaultValue>'10:20 AM'</defaultValue>
+      <description></description>
+      <id>50b95fd9-885f-4038-9831-b66ed40ae86c</id>
+      <masked>false</masked>
+      <name>TimeSlot_After</name>
+   </variable>
+   <variable>
+      <defaultValue>'Parking Facility'</defaultValue>
+      <description></description>
+      <id>34ab539c-19f1-419c-8199-af330a31a3b7</id>
+      <masked>false</masked>
+      <name>Available_Facility</name>
+   </variable>
+   <variable>
+      <defaultValue>'Accept'</defaultValue>
+      <description></description>
+      <id>b022686a-96c2-48c2-88c1-602308e99235</id>
+      <masked>false</masked>
+      <name>Terms</name>
+   </variable>
+   <variable>
+      <defaultValue>'false'</defaultValue>
+      <description></description>
+      <id>10ac052c-613d-4f8d-9843-6a06721df34b</id>
+      <masked>false</masked>
+      <name>Snack</name>
+   </variable>
 </TestCaseEntity>
