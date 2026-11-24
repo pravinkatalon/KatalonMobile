@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Book and Cancel Show Based on City</name>
+   <tag></tag>
+   <integratedEntity>
+      <productName>TESTOPS</productName>
+      <properties>
+         <entry>
+            <key>createdByName</key>
+            <value>Pravin Raj Paul</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByName</key>
+            <value>Pravin Raj Paul</value>
+         </entry>
+         <entry>
+            <key>createdByUuid</key>
+            <value>b012d1f4-436f-404e-b6bf-7ba80711ad64</value>
+         </entry>
+         <entry>
+            <key>lastModifiedByUuid</key>
+            <value>b012d1f4-436f-404e-b6bf-7ba80711ad64</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>657d6d60-884b-436f-a45a-7716b725097f</testCaseGuid>
+</TestCaseEntity>

@@ -14,7 +14,7 @@ assert useOtp || password :
 	'G_Password must be configured when G_UseOTP is false.'
 
 Mobile.callTestCase(
-	findTestCase('Test Cases/Android/Authentication/TC_LOGIN'),
+	findTestCase('Android/Authentication/TC_LOGIN'),
 	[
 		('msisdn') : msisdn,
 		('password') : password,

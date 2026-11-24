@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.callTestCase(findTestCase('Test Cases/Android/Authentication/TC_LOGIN'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Android/Authentication/TC_LOGIN'), [:], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Android/Account/menu_tap'), 60)
 

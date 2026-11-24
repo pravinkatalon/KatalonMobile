@@ -5,7 +5,7 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testobject.TestObject
 
-Mobile.callTestCase(findTestCase('Test Cases/Android/Authentication/TC_LOGIN'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Android/Authentication/TC_LOGIN'), [:], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Android/Bill Payment/tab_home_entertainment'), 60)
 

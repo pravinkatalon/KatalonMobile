@@ -17,7 +17,7 @@ assert alternateUseOtp || alternatePassword :
 	'G_AlternatePassword must be configured when G_AlternateUseOTP is false.'
 
 Mobile.callTestCase(
-	findTestCase('Test Cases/Android/Authentication/TC_LOGIN'),
+	findTestCase('Android/Authentication/TC_LOGIN'),
 	[
 		('msisdn') : alternateMsisdn,
 		('password') : alternatePassword,

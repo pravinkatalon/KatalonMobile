@@ -10,7 +10,7 @@ String duplicateAmount = BigDecimal.valueOf(ThreadLocalRandom.current().nextLong
 
 KeywordUtil.logInfo("Duplicate payment amount: $duplicateAmount")
 
-Mobile.callTestCase(findTestCase('Test Cases/Android/Bill Payment/Postpaid/TC_PAY_ENTERED_AMOUNT_SAVED_CARD'), [('paymentAmount') : duplicateAmount], 
+Mobile.callTestCase(findTestCase('Android/Bill Payment/Postpaid/TC_PAY_ENTERED_AMOUNT_SAVED_CARD'), [('paymentAmount') : duplicateAmount], 
     FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Android/Bill Payment/btn_back_to_my_digicel'), 60)

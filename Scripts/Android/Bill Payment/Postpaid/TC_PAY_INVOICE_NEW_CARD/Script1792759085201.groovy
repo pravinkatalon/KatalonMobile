@@ -13,7 +13,7 @@ String enteredAmount = BigDecimal.valueOf(
 	ThreadLocalRandom.current().nextLong(100, 1100),
 	2).toPlainString()
 
-Mobile.callTestCase(findTestCase('Test Cases/Android/Authentication/TC_LOGIN'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Android/Authentication/TC_LOGIN'), [:], FailureHandling.STOP_ON_FAILURE)
 Mobile.tap(findTestObject('Android/Bill Payment/btn_pay_bill'), 60)
 Mobile.tap(findTestObject('Android/Bill Payment/radio_pay_in_full'), 60)
 //Mobile.setText(findTestObject('Android/Bill Payment/input_payment_amount'), enteredAmount, 60)

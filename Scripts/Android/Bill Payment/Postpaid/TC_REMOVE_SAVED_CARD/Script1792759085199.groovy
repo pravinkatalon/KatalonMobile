@@ -5,7 +5,7 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testobject.TestObject
 
-Mobile.callTestCase(findTestCase('Test Cases/Android/Authentication/TC_LOGIN'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Android/Authentication/TC_LOGIN'), [:], FailureHandling.STOP_ON_FAILURE)
 Mobile.tap(findTestObject('Android/Bill Payment/btn_pay_bill'), 60)
 Mobile.tap(findTestObject('Android/Bill Payment/radio_pay_in_full'), 60)
 Mobile.setText(findTestObject('Android/Bill Payment/input_payment_amount'), '12', 60)

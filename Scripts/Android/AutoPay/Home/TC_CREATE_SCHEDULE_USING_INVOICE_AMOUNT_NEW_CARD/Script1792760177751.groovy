@@ -13,7 +13,7 @@ String enteredAmount = BigDecimal.valueOf(
 	ThreadLocalRandom.current().nextLong(100, 1100),
 	2).toPlainString()
 
-Mobile.callTestCase(findTestCase('Test Cases/Android/Authentication/TC_LOGIN'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Android/Authentication/TC_LOGIN'), [:], FailureHandling.STOP_ON_FAILURE)
 Mobile.tap(findTestObject('Android/Bill Payment/tab_home_entertainment'), 60)
 
 String accountName = GlobalVariable.G_HomeAccount?.toString()?.trim()
