@@ -4,6 +4,8 @@ import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import io.appium.java_client.AppiumDriver
+import io.appium.java_client.Location
+import io.appium.java_client.remote.SupportsLocation
 import org.openqa.selenium.By
 import org.openqa.selenium.WebElement
 
@@ -17,7 +19,7 @@ class MobileAssist {
 
     /**
      * Scrolls until text is visible or maxSwipes is reached.
-     * swipeScale: fraction of the container height each swipe covers (e.g. 0.3 for short swipes).
+     * swipeScale: fraction of the container height each swipe covers (e.g. 0.3 for short swipes). 
      */
     @Keyword
     static boolean scrollToText(TestObject container, String text, String direction = 'DOWN',
@@ -88,6 +90,26 @@ class MobileAssist {
 
         println "MobileAssist could not find text '${text}' after ${pages} page scroll(s)"
         return false
+    }
+
+    /**
+     * Sets the device GPS location for the running session (local emulator or Test Cloud).
+     * Example (Chennai): setDeviceLocation(13.0827, 80.2707)
+     */
+    @Keyword
+    static boolean setDeviceLocation(double latitude, double longitude, double altitude = 0) {
+        if (latitude < -90 || latitude > 90 || longitude < -180 || longitude > 180) {
+            throw new IllegalArgumentException('latitude must be -90..90 and longitude -180..180')
+        }
+        try {
+            AppiumDriver driver = MobileDriverFactory.getDriver()
+            ((SupportsLocation) driver).setLocation(new Location(latitude, longitude, altitude))
+            println "MobileAssist device location set to lat=${latitude}, long=${longitude}, alt=${altitude}"
+            return true
+        } catch (Exception e) {
+            failAndPrint("Unable to set device location: ${e.class.simpleName}: ${e.message}")
+            return false
+        }
     }
 
     /** Seconds the first check keeps re-reading the current view before the first swipe. */

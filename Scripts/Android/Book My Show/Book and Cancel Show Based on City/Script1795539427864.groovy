@@ -27,6 +27,8 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startApplication('/Users/pravinr/Downloads/bookmyshow.apk', true)
 
+CustomKeywords.'MobileAssist.setDeviceLocation'(13.0827, 80.2707)
+
 Mobile.tap(findTestObject('Android/BookMyShow/android.widget.TextView - Skip'), 60)
 
 Mobile.tap(findTestObject('Android/BookMyShow/android.widget.EditText - Search for your city'), 60)
