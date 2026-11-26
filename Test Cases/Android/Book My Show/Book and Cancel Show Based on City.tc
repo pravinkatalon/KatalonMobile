@@ -70,21 +70,21 @@
       <name>Movie</name>
    </variable>
    <variable>
-      <defaultValue>'Cinepolis'</defaultValue>
+      <defaultValue>'MAYAJAAL'</defaultValue>
       <description></description>
       <id>1fd82a58-1660-48b6-b498-d8327c0e78fe</id>
       <masked>false</masked>
       <name>Theater</name>
    </variable>
    <variable>
-      <defaultValue>'01:10 PM'</defaultValue>
+      <defaultValue>'02:55 PM'</defaultValue>
       <description></description>
       <id>f3ed6a18-477e-44e0-bcad-2f510c7936ea</id>
       <masked>false</masked>
       <name>TimeSlot_Before</name>
    </variable>
    <variable>
-      <defaultValue>'10:20 AM'</defaultValue>
+      <defaultValue>'10:00 PM'</defaultValue>
       <description></description>
       <id>50b95fd9-885f-4038-9831-b66ed40ae86c</id>
       <masked>false</masked>
@@ -98,14 +98,14 @@
       <name>Available_Facility</name>
    </variable>
    <variable>
-      <defaultValue>'Accept'</defaultValue>
+      <defaultValue>'Okay'</defaultValue>
       <description></description>
       <id>b022686a-96c2-48c2-88c1-602308e99235</id>
       <masked>false</masked>
       <name>Terms</name>
    </variable>
    <variable>
-      <defaultValue>'false'</defaultValue>
+      <defaultValue>'true'</defaultValue>
       <description></description>
       <id>10ac052c-613d-4f8d-9843-6a06721df34b</id>
       <masked>false</masked>

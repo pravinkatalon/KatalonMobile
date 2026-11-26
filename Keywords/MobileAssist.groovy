@@ -34,7 +34,10 @@ class MobileAssist {
         }
 
         for (int attempt = 0; attempt <= maxSwipes; attempt++) {
-            if (containsText(driver, text, exactMatch, scrollTarget.element as WebElement)) {
+            boolean found = attempt == 0
+                    ? containsTextInitial(driver, text, exactMatch, scrollTarget.element as WebElement)
+                    : containsText(driver, text, exactMatch, scrollTarget.element as WebElement)
+            if (found) {
                 println "MobileAssist found text '${text}' after ${attempt} scroll(s)"
                 return true
             }
@@ -67,7 +70,10 @@ class MobileAssist {
         }
 
         for (int page = 0; page <= pages; page++) {
-            if (containsText(driver, text, exactMatch, scrollTarget.element as WebElement)) {
+            boolean found = page == 0
+                    ? containsTextInitial(driver, text, exactMatch, scrollTarget.element as WebElement)
+                    : containsText(driver, text, exactMatch, scrollTarget.element as WebElement)
+            if (found) {
                 println "MobileAssist found text '${text}' after ${page} page scroll(s)"
                 return true
             }
@@ -82,6 +88,27 @@ class MobileAssist {
 
         println "MobileAssist could not find text '${text}' after ${pages} page scroll(s)"
         return false
+    }
+
+    /** Seconds the first check keeps re-reading the current view before the first swipe. */
+    private static final int INITIAL_SETTLE_SECONDS = 3
+
+    /**
+     * First check on the current view. The screen may still be rendering right after the
+     * previous step, so re-read it every 500ms for up to INITIAL_SETTLE_SECONDS before swiping.
+     */
+    private static boolean containsTextInitial(AppiumDriver driver, String text, boolean exactMatch, WebElement container = null) {
+        long deadline = System.currentTimeMillis() + INITIAL_SETTLE_SECONDS * 1000L
+        while (true) {
+            if (containsText(driver, text, exactMatch, container)) {
+                return true
+            }
+            if (System.currentTimeMillis() >= deadline) {
+                println "MobileAssist text '${text}' not in current view after ${INITIAL_SETTLE_SECONDS}s, starting to scroll"
+                return false
+            }
+            Thread.sleep(500)
+        }
     }
 
     /**
@@ -100,11 +127,31 @@ class MobileAssist {
         // Katalon leaves a 60s implicit wait after its own steps; set 0 so a miss returns at once.
         driver.manage().timeouts().implicitlyWait(Duration.ZERO)
 
-        List<WebElement> matches = container != null
-                ? container.findElements(By.xpath(".//*[${condition}]"))
-                : driver.findElements(By.xpath("//*[${condition}]"))
-        println "MobileAssist text search: text='${text}', inContainer=${container != null}, matches=${matches.size()}"
-        return !matches.isEmpty()
+        if (container == null) {
+            List<WebElement> matches = driver.findElements(By.xpath("//*[${condition}]"))
+            println "MobileAssist text search: text='${text}', inContainer=false, matches=${matches.size()}"
+            return !matches.isEmpty()
+        }
+
+        // 1. Nested search from the container element.
+        List<WebElement> nested = container.findElements(By.xpath(".//*[${condition}]"))
+        if (!nested.isEmpty()) {
+            println "MobileAssist text search: text='${text}', nested matches=${nested.size()}"
+            return true
+        }
+
+        // 2. Element-scoped xpath can miss nodes on UiAutomator2: search the whole screen
+        //    and keep matches whose centre lies inside the container's visible bounds.
+        def box = container.getRect()
+        List<WebElement> onScreen = driver.findElements(By.xpath("//*[${condition}]"))
+        int inBounds = onScreen.count { WebElement el ->
+            def r = el.getRect()
+            int cx = r.x + (r.width / 2) as int
+            int cy = r.y + (r.height / 2) as int
+            cx >= box.x && cx <= box.x + box.width && cy >= box.y && cy <= box.y + box.height
+        } as int
+        println "MobileAssist text search: text='${text}', nested matches=0, screen matches=${onScreen.size()}, inside container=${inBounds}"
+        return inBounds > 0
     }
 
     private static Map resolveScrollTarget(AppiumDriver driver, TestObject container) {

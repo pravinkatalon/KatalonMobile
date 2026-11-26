@@ -25,7 +25,7 @@ import java.util.regex.Matcher as Matcher
 import java.util.regex.Pattern as Pattern
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('/Users/pravinr/Katalon Studio/KatalonMobile/Resources/Apps/bookmyshow.apk', true)
+Mobile.startApplication('/Users/pravinr/Downloads/bookmyshow.apk', true)
 
 Mobile.tap(findTestObject('Android/BookMyShow/android.widget.TextView - Skip'), 60)
 
@@ -40,7 +40,7 @@ Mobile.tap(findTestObject('Android/BookMyShow/android.widget.TextView - Dismiss'
 Mobile.tap(findTestObject('Android/BookMyShow/android.widget.TextView - Movies'), 60)
 
 CustomKeywords.'MobileAssist.scrollToText'(findTestObject('Android/BookMyShow/androidx.recyclerview.widget.RecyclerView Movies Thumb (1)'), 
-    Movie, 'UP', 5, false, 0.6)
+    Movie, 'UP', 10, false, 0.6)
 
 Mobile.tap(findTestObject('Android/BookMyShow/android.widget.TextView - Movie', [('movie') : Movie]), 60)
 
@@ -50,12 +50,13 @@ Mobile.tap(findTestObject('Android/BookMyShow/android.widget.TextView - Book tic
 
 date = CustomKeywords.'DateUtils.todayPlusDays'(2, 'dd')
 
-date = '26'
-
+//date = '26'
 Mobile.tap(findTestObject('Android/BookMyShow/android.widget.TextView - Date', [('date') : date]), 60)
+
 
 CustomKeywords.'MobileAssist.scrollToText'(findTestObject('Android/BookMyShow/android.view.View Theaters List'), Theater, 
     'UP', 5, false, 0.4)
+
 
 Mobile.tap(findTestObject('Android/BookMyShow/android.widget.TextView - Theater', [('theater') : Theater]), 60)
 
@@ -196,9 +197,25 @@ println((((('Selected series: Row ' + series.get(0).get('row')) + ', Seats ') + 
         series.size() - 1).get('seat'))
 
 // 4. Tap the first seat of the series
-def rect = series[0].element.getRect()
+//def rect = series[0].element.getRect()
 
+//Mobile.tapAtPosition(((rect.x + (rect.width / 2)) as int), ((rect.y + (rect.height / 2)) as int))
+
+// 4. Tap the leftmost seat (on screen) of the series - the app fills to the right of it
+WebElement firstSeat = null
+int minX = Integer.MAX_VALUE
+for (Map s : series) {
+	WebElement el = s.get('element')
+	int x = el.getRect().x
+	if (x < minX) {
+		minX = x
+		firstSeat = el
+	}
+}
+def rect = firstSeat.getRect()
 Mobile.tapAtPosition(((rect.x + (rect.width / 2)) as int), ((rect.y + (rect.height / 2)) as int))
+println('Tapped seat: ' + firstSeat.getAttribute('content-desc'))
+
 
 // 5. Total cost of the selected seats
 BigDecimal totalCost = ((series.sum({ 
@@ -223,14 +240,21 @@ if (Terms.equals('Accept')) {
 }
 
 if (Snack.equals('true')) {
-    Mobile.tap(findTestObject('Android/BookMyShow/android.widget.TextView - Add'), 60)
+	
+	Mobile.delay(2)
+	
+	snackAvailable = Mobile.verifyElementVisible(findTestObject('Object Repository/Android/BookMyShow/android.widget.TextView - Grab a Bite'), 3)
+	
+    if (snackAvailable) {
+		Mobile.tap(findTestObject('Android/BookMyShow/android.widget.TextView - Add'), 60)
 
-    Mobile.tap(findTestObject('android.widget.Button (1)'), 60)
+    Mobile.tap(findTestObject('Android/BookMyShow/android.widget.Button - Snacks Plus'), 60)
 
-    Mobile.tap(findTestObject('Android/BookMyShow/android.widget.TextView - Proceed'), 60)
+    Mobile.tap(findTestObject('Android/BookMyShow/android.widget.TextView - Snacks Proceed'), 60)
+	}
 }
 
-Mobile.tap(findTestObject('Android/BookMyShow/android.widget.EditText - email'), 60)
+
 
 Mobile.setText(findTestObject('Android/BookMyShow/android.widget.EditText - email'), 'p@p.com', 0)
 
